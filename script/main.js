@@ -246,3 +246,19 @@ document.getElementById('clear-btn').addEventListener('click', function(){
     const history = document.getElementById('history');
     history.innerHTML = '';
 })
+
+
+
+// ------------secend-page-------------
+
+document.getElementById('to-secend-page').addEventListener('click', function(){
+    window.location.href = 'scendPage.html';
+})
+
+
+
+// ------------secend-page  to first-page-------------
+
+document.getElementById('to-first-page').addEventListener('click', function(){
+    console.log('hello ')
+})
