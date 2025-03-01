@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body class=" bg-slate-200">
+    <nav class=" bg-white rounded-xl
+        mt-4 max-w-11/12 mx-auto">
+            <div class=" flex justify-between items-center px-4">
+                <div>
+                    <div class="flex items-center gap-2">
+                        <img class=" my-2" src="./assets/logo.png" alt="">
+                        <h1 class=" text-xl">Dev<span class=" font-bold">Board</span></h1>
+                    </div>
+                </div>
+                <div>
+                    <button class=" clickBtn bg-[#3752FD] px-5 py-3 text-white rounded-xl
+                    ">Back to Desk</button>
+                </div>
+                
+            </div>
+    </nav>
+    <main>
+        <section>
+            <p class=" font-bold my-3 text-xl text-center">Blogs</p>
+            <div class=" bg-white rounded-xl mb-4 w-11/12 mx-auto ">
+                <p class=" px-3 py-4 border-b border-dotted">Question-1: What are the different ways to select an element in the DOM?</p>
+                <p class=" px-3 py-5">In javaScript i know some ways to select elements form DOM.There are: <br>
+                     1. getElementById()  2. getElementsByClassName()  3.getElementsByTagName()  4. querySelector()  5. querySelectorAll()</p>
+            </div>
+            <div class=" bg-white rounded-xl mb-4 w-11/12 mx-auto ">
+                <p class=" px-3 py-4 border-b border-dotted">Question-2: What is the difference between innerHTML, innerText, and textContent ?</p>
+                <p class=" px-3 py-5">innerHTML: gets the HTML markup with tags and comments. <br> innerText: gets only the test content on the element. <br>
+                textContent: It also gets the text content on the element. But it does not consider CSS styles</p>
+            </div>
+            <div class=" bg-white rounded-xl mb-4 w-11/12 mx-auto ">
+                <p class=" px-3 py-4 border-b border-dotted">Question-3: What is event delegation in the DOM?</p>
+                <p class=" px-3 py-5">Event delegation is a technique in JavaScript where you attach a single event listener to a parent element instead of adding individual event listeners to each child element</p>
+            </div>
+            <div class=" bg-white rounded-xl mb-4 w-11/12 mx-auto ">
+                <p class=" px-3 py-4 border-b border-dotted">Question-4: What is event bubbling in the DOM?
+                </p>
+                <p class=" px-3 py-5">Event bubbling is a concept in the DOM where an event that is triggered on a child element propagates through the DOM tree to its parent elements, all the way to the root (usually the document object). </p>
+            </div>
+            <div class=" bg-white rounded-xl mb-4 w-11/12 mx-auto ">
+                <p class=" px-3 py-4 border-b border-dotted">Question-5: How do you create, add, and remove elements using JavaScript?
+                </p>
+                <p class=" px-3 py-5">Create elements: document.createElement(tag name); <br>
+                Add elements: parentElement.appendChild(createElement); <br>
+                remove elements: parentElement.removeChild(childElement); </p>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
