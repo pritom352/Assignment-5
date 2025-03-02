@@ -14,21 +14,24 @@
         }
     </style>
 </head>
-<body class=" bg-slate-200">
+<body id="background-color" class=" bg-slate-200">
     <header class=" max-w-11/12 mx-auto">
         <nav class=" bg-white rounded-xl
         mt-4">
             <div class=" flex justify-between items-center px-4">
                 <div>
-                    <div class="flex items-center gap-2">
-                        <img class=" my-2" src="./assets/logo.png" alt="">
+                    <div class="flex items-center gap-2 py-2">
+                        <img src="./assets/logo.png" alt="">
                         <h1 class=" text-xl">Dev<span class=" font-bold">Board</span></h1>
                     </div>
                 </div>
                 <div class=" flex items-center gap-3">
-                    <input type="checkbox" name="" id="">
+                    <input type="checkbox" name="" id="" checked >
                     <p id="nav-totalAssigned">23</p>
-                    <button><img class=" ml-2" src="./assets/theme-btn.png" alt=""></button>
+                    
+                    <img id="btn-color" class=" ml-2" src="./assets/theme-btn.png" alt="">
+                    
+                    
                 </div>
             </div>
         </nav>
@@ -38,7 +41,7 @@
             <div class=" col-span-3">
                 <div class=" grid grid-cols-4 gap-3 ">
                     <div class=" bg-[#F4F7FF] rounded-xl px-8 flex gap-3 items-center">
-                        <input type="checkbox" name="" id="">
+                        <input type="checkbox" name="" id="" checked >
                         <div class=" ">
                             <h5>Task Assigned</h5>
                             <h4 id="totalAssigned">06</h4>
@@ -46,12 +49,11 @@
                     </div>
                     <div id="to-secend-page" class=" bg-indigo-500 col-span-2 rounded-xl px-8 flex gap-3 items-center py-2">
                         <img src="./assets/board.png" alt="">
-                        <p>Discover Something <br> New Today!</p>
+                        <p class="text-2xl text-white font-semibold">Discover Something <br> New Today!</p>
                     </div>
                     <div class=" bg-[#F4F7FF] rounded-xl px-8 flex gap-3 items-center">
                         <img src="./assets/calender.png" alt="">
-                        <p>Wed , <br>
-                            Jul 28 2025 </p>
+                        <p id="date-time"></p>
                     </div>
                 </div>
 
@@ -161,6 +163,10 @@
             </div>
         </div>
     </main>
+
+
+
+    <p id="demo"></p>
 
 
     <script src="./script/main.js"></script>
